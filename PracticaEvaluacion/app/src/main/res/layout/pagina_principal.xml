@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_toRightOf="@+id/nombre"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/fNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_marginTop="26dp"
+        android:text="Fecha de Nacimiento"
+        android:textColor="@color/white"
+        android:inputType="date"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/fNacimiento"
+        android:background="@color/white" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fNacimiento"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/fNacimiento"
+        android:checked="false"
+        android:text="Crear Recordatorio"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/fNacimiento"
+        android:background="@color/black"
+        android:text="Aceptar" />
+
+</RelativeLayout>
